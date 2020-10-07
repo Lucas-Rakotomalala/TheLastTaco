@@ -3,7 +3,10 @@
 public class EnemyPatrol : MonoBehaviour
 {
     public float speed;
+    private bool isAttacking;
     public Transform[] waypoints;
+
+    public int damageOnCollision = 20;
 
     public SpriteRenderer graphics;
     private Transform target;
@@ -16,6 +19,7 @@ public class EnemyPatrol : MonoBehaviour
 
     void Update()
     {
+        InputButton();
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -26,5 +30,27 @@ public class EnemyPatrol : MonoBehaviour
             target = waypoints[destPoint];
             graphics.flipX = !graphics.flipX;
         }
+    }
+
+     private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Player")&& !isAttacking )
+        {
+            PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
+            playerHealth.TakeDamage(damageOnCollision);
+        }
+    }
+
+    void InputButton()
+    {
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            isAttacking = true;
+        }
+    }
+
+     private void ResetValues()
+    {
+        isAttacking = false;
     }
 }
