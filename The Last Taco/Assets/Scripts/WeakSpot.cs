@@ -4,6 +4,7 @@ public class WeakSpot : MonoBehaviour
 {
     public GameObject objectToDestroy;
     public Animator animator;
+    public AudioClip killSound;
 
     private bool isAttacking2;
 
@@ -11,10 +12,11 @@ public class WeakSpot : MonoBehaviour
     {
         if (collision.CompareTag("Player") && isAttacking2)
         {
+            AudioManager.instance.PlayClipAt(killSound, transform.position);
             Destroy(objectToDestroy);
         }
 
-        ResetValues();
+        isAttacking2 = false;
     }
 
      void Update() 

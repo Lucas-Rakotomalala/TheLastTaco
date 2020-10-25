@@ -14,16 +14,32 @@ public class PlayerMouvement : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask collisionLayers;
+    public CapsuleCollider2D playerCollider;
 
     public Rigidbody2D rb;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
+
+
 
     private bool isAttacking;
 
 
     private Vector3 velocity= Vector3.zero;
     private float horizontalMovement;
+
+    public static PlayerMouvement instance;
+
+     private void Awake()
+   {
+       if(instance != null)
+       {
+           Debug.LogWarning("Il n'y a plus d'une instance de PlayerMouvement dans la scène");
+           return;
+       }
+
+       instance = this; 
+   }
 
     void Update()
     {

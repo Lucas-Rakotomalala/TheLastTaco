@@ -616,6 +616,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   luminIcon:
     m_Name: 
@@ -629,10 +630,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 839f196c-6486-45a5-931c-7b563bcf3c46
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: The Last Taco (1)
+  organizationId: lucasrakotomalala
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

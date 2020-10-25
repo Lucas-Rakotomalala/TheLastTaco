@@ -24,4 +24,10 @@ public class Inventory : MonoBehaviour
        tacoCount += count;
        tacosCountText.text = tacoCount.ToString();
    }
+
+   public void RemoveTacos(int count)
+   {
+        tacoCount -= count;
+       tacosCountText.text = tacoCount.ToString();
+   }
 }
