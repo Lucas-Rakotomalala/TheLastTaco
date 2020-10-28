@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 3575481056494289833}
   - component: {fileID: 3575481056494289834}
   - component: {fileID: 3575481056494289832}
+  - component: {fileID: 590298158}
   m_Layer: 8
   m_Name: Ninja
   m_TagString: Player
@@ -157,6 +158,7 @@ MonoBehaviour:
   collisionLayers:
     serializedVersion: 2
     m_Bits: 1
+  playerCollider: {fileID: 3575481056494289832}
   rb: {fileID: 3575481056494289839}
   animator: {fileID: 3575481056494289833}
   spriteRenderer: {fileID: 3575481056494289836}
@@ -198,6 +200,7 @@ MonoBehaviour:
   isInvincible: 0
   graphics: {fileID: 3575481056494289836}
   healthBar: {fileID: 0}
+  hitSound: {fileID: 8300000, guid: 1084b91cef10fc59d9c5e8ebc7135eb4, type: 3}
 --- !u!70 &3575481056494289832
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -214,3 +217,15 @@ CapsuleCollider2D:
   m_Offset: {x: -0.056254942, y: -0.032133956}
   m_Size: {x: 2.282495, y: 4.4542685}
   m_Direction: 0
+--- !u!114 &590298158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575481056494289827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 994544527a37cc225823348e2a18c6c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

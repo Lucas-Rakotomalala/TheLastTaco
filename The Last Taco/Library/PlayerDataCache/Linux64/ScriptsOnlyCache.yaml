@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AudioManager
     - CameraFollow
     - CheckPoint
+    - Credits
     - CurrentSceneManager
     - DeathZone
     - DontDestroyOnLoadScene
@@ -26,7 +27,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -40,8 +40,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -62,6 +64,59 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
   sceneClasses:
+    Assets/Scenes/Credits.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11258}
+    - Class: 114
+      Script: {instanceID: 11552}
+    - Class: 114
+      Script: {instanceID: 11606}
+    - Class: 114
+      Script: {instanceID: 12274}
+    - Class: 114
+      Script: {instanceID: 13756}
+    - Class: 114
+      Script: {instanceID: 14374}
+    - Class: 114
+      Script: {instanceID: 27126}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Level01.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -116,11 +171,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11552}
     - Class: 114
+      Script: {instanceID: 11556}
+    - Class: 114
       Script: {instanceID: 11606}
     - Class: 114
       Script: {instanceID: 11672}
     - Class: 114
       Script: {instanceID: 11886}
+    - Class: 114
+      Script: {instanceID: 12100}
     - Class: 114
       Script: {instanceID: 12188}
     - Class: 114
@@ -130,7 +189,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12414}
     - Class: 114
+      Script: {instanceID: 12628}
+    - Class: 114
       Script: {instanceID: 12744}
+    - Class: 114
+      Script: {instanceID: 12812}
     - Class: 114
       Script: {instanceID: 12904}
     - Class: 114
@@ -154,7 +217,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14146}
     - Class: 114
+      Script: {instanceID: 14342}
+    - Class: 114
       Script: {instanceID: 14374}
+    - Class: 114
+      Script: {instanceID: 14394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -201,6 +268,8 @@ ScriptsOnlyBuild:
     - Class: 61
       Script: {instanceID: 0}
     - Class: 62
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -322,7 +391,7 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 738c23b7b3b2a8414d48e37a088fd920
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PickUpObject
@@ -544,7 +613,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: ba4e407ce29ce6a396a43bbeb24d00da
+      Hash: c024782bf885e66abbd1304f5a3e7ad7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AudioManager
@@ -634,7 +703,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: 5f11914af5e1a9fa83a1802f2cdc16a5
+      Hash: c427345500a993aa9fe0ab1361bb2f6b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SettingMenu
@@ -646,7 +715,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 155addad0548dbf8f723664199b405ec
+      Hash: 5cb46f914e8d6af43b65a4ac105b1c91
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HeadPowerUp
@@ -766,7 +835,7 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: 5160f0b8c8b6ceadedfc2b945730d2f2
+      Hash: 053148025ef4f31bff54b09210648ecb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WeakSpot
@@ -784,7 +853,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: b1ceef7c0dd547616be4e2a35c9ea288
+      Hash: 8cf6522ecb346c77c3f426f3c328e3ab
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerHealth
@@ -914,9 +983,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Credits
   platform: 24
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/Level01.unity
   - Assets/Scenes/Level02.unity
+  - Assets/Scenes/Credits.unity
   playerPath: /home/lucas/The Last Taco/Builds/LastTaco.x86_64

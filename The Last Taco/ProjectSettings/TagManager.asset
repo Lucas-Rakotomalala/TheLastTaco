@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FadeSystem
   - PlayerSpawn
+  - InterractUI
   layers:
   - Default
   - TransparentFX

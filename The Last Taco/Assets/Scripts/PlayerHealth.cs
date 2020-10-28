@@ -93,7 +93,7 @@ public class PlayerHealth : MonoBehaviour
     {
         PlayerMouvement.instance.enabled = true;
         PlayerMouvement.instance.animator.SetTrigger("Respawn");
-        PlayerMouvement.instance.rb.bodyType= RigidbodyType2D.Kinematic;
+        PlayerMouvement.instance.rb.bodyType= RigidbodyType2D.Dynamic;
         PlayerMouvement.instance.playerCollider.enabled = true;
         currentHealth = maxHealth;
         healthBar.SetHealth(currentHealth);
