@@ -15,6 +15,7 @@ MonoBehaviour:
   id: 2
   Name: SpeedPotion
   description: Position increasing by 520 units.
+  price: 3
   image: {fileID: 21300000, guid: 892e0a80a43bb5d168e40b32faaf305c, type: 3}
   hpGiven: 0
   speedGiven: 250

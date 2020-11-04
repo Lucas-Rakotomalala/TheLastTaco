@@ -62,11 +62,11 @@
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerMouvement.cs" />
      <Compile Include="Assets\Scripts\RotationTacos.cs" />
+     <Compile Include="Assets\Scripts\SellButtonItem.cs" />
      <Compile Include="Assets\Scripts\SettingMenu.cs" />
+     <Compile Include="Assets\Scripts\ShopManager.cs" />
      <Compile Include="Assets\Scripts\ShopTrigger.cs" />
      <Compile Include="Assets\Scripts\WeakSpot.cs" />
-     <Compile Include="Assets\SellButtonItem.cs" />
-     <Compile Include="Assets\ShopManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/lucas/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
