@@ -1,5 +1,5 @@
 <table align="center"><tr><td align="center" width="5000">
-<img src="image/Logo.png" align="center" width="657" alt="Project icon">
+<img src="images/Logo.png" align="center" width="657" alt="Project icon">
 </table>
 
 The Last Taco
