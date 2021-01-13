@@ -66,8 +66,6 @@ Comment jouer ?
 - Potions de rapidité :
 		Augmente la vitesse de déplacement pendant 10 secondes.
 	<img src="images/SpeedPotion.png"  width="120" height="120">
-- Potions de détente :
-		Augmente la détente de x unités.
 
 #### Les Boss
 
