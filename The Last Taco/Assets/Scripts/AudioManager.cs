@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 
+//Classe permettant de gérer les musiques du jeu
 public class AudioManager : MonoBehaviour
 {
     public AudioClip[] playlist;
@@ -11,6 +12,7 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
 
+   //Singleton
    private void Awake()
    {
        if(instance != null)
@@ -22,12 +24,14 @@ public class AudioManager : MonoBehaviour
        instance = this; 
    }
 
+   //Procédure permettant de lancer la première musique
     void Start()
     {
         audioSource.clip = playlist[0];
         audioSource.Play();
     }
 
+    //Procédure permettant de lancer la musique suivante lorsque la première musique est terminée
     void Update()
     {
         if (!audioSource.isPlaying)
@@ -36,6 +40,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    //Procédure permettant de jouer la musique suivante de la playlist
     void PlayNextSong()
     {
         musicIndex = (musicIndex + 1) % playlist.Length;

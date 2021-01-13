@@ -12,11 +12,14 @@ public class EnemyPatrol : MonoBehaviour
     private Transform target;
     private int destPoint = 0;
 
+
+    //Pocédure initialisation
     void Start()
     {
         target = waypoints[0];
     }
 
+    //Procédure mise à jour des événements
     void Update()
     {
         InputButton();
@@ -32,6 +35,7 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
+    //Procédure entrer en collision entre joueur et ennemis 
      private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.CompareTag("Player")&& !isAttacking )
@@ -41,6 +45,7 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
+    //Procédure détection bouton appuyé
     void InputButton()
     {
         if(Input.GetKeyDown(KeyCode.LeftShift))
@@ -48,7 +53,8 @@ public class EnemyPatrol : MonoBehaviour
             isAttacking = true;
         }
     }
-
+    
+    //Procédure remise à zéro des valeurs
      private void ResetValues()
     {
         isAttacking = false;

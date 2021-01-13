@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Classe permettant le mouvement du joueur
 public class PlayerMouvement : MonoBehaviour
 {
 
@@ -30,6 +31,8 @@ public class PlayerMouvement : MonoBehaviour
 
     public static PlayerMouvement instance;
 
+
+    //Singelton
      private void Awake()
    {
        if(instance != null)
@@ -41,6 +44,7 @@ public class PlayerMouvement : MonoBehaviour
        instance = this; 
    }
 
+    //Procédure de mise à jour des frames
     void Update()
     {
         InputButton();
@@ -62,17 +66,19 @@ public class PlayerMouvement : MonoBehaviour
         ResetValues();
     }
    
+    //Procédure temps fixé 
      void FixedUpdate()
     {
        isGrounded = Physics2D.OverlapCircle(groundCheck.position,groundCheckRadius, collisionLayers);
        MovePlayer(horizontalMovement);
     }
 
-
+    //Procédure déplacement du joueur sur l'axe horizontale
     void MovePlayer(float _horizontalMouvement)
     {
         if(isJumping)
         {
+            animator.SetTrigger("NinjaJump");
             rb.AddForce(new Vector2(0f, jumpForce));
             isJumping = false;
         }
@@ -83,6 +89,7 @@ public class PlayerMouvement : MonoBehaviour
         }
     }
 
+    //Procédure attaque du joueur
     void Attack()
     {
         if(isAttacking)
@@ -92,12 +99,14 @@ public class PlayerMouvement : MonoBehaviour
         }
     }
 
+    //Détection touche espace
     public static KeyCode SpacebarKey()
     {
     if (Application.isEditor) return KeyCode.O;
     else return KeyCode.Space;
     }
 
+    //Procédure détection touche appuyée
     void InputButton()
     {
         if(Input.GetKeyDown(KeyCode.LeftShift))
@@ -106,6 +115,7 @@ public class PlayerMouvement : MonoBehaviour
         }
     }
 
+    //Procédure permettant de changer l'image du joueur permetttant une marche avant dans la direction qu'on souhaite
     void Flip(float _velocity)
     {
         if(_velocity > 0.1f)
@@ -117,11 +127,13 @@ public class PlayerMouvement : MonoBehaviour
         } 
     }
 
+    //Procédure remise à zéro des valeurs
     private void ResetValues()
     {
         isAttacking = false;
     }
 
+    //Procédure permettant de détecter le contact entre le joueur et le sol 
       private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;

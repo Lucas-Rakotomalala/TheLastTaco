@@ -12,6 +12,8 @@ public class ShopManager : MonoBehaviour
     public Transform sellButtonParents;
     public static ShopManager instance;
 
+
+    //Singleton
    private void Awake()
    {
        if(instance != null)
@@ -23,6 +25,7 @@ public class ShopManager : MonoBehaviour
        instance = this; 
    }
 
+    //Ouvrir le magasin en chargeant les items disponibles
    public void OpenShop(Item[] items, string pngName)
    {
        pngNameText.text = pngName;
@@ -30,6 +33,7 @@ public class ShopManager : MonoBehaviour
        animator.SetBool("isOpen",true);
    }
 
+    //Procédure qui transfert les items du magasin ou joueur une fois l'achat effectué
    void UpdateItemsTosell(Item[] items)
    {
        for (int i= 0; i < sellButtonParents.childCount;i++)
@@ -51,6 +55,7 @@ public class ShopManager : MonoBehaviour
        }
    }
 
+    //Procédure fermer le magasin
    public void CloseShop()
    {
        animator.SetBool("isOpen",false);

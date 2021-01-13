@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\Boss.cs" />
+     <Compile Include="Assets\Scripts\Boss_Run.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CheckPoint.cs" />
      <Compile Include="Assets\Scripts\Credits.cs" />
@@ -51,6 +53,7 @@
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\Scripts\ItemsDatabase.cs" />
      <Compile Include="Assets\Scripts\LevelSelector.cs" />
      <Compile Include="Assets\Scripts\LoadAndSaveData.cs" />
      <Compile Include="Assets\Scripts\LoadSpeceficScene.cs" />
@@ -67,6 +70,7 @@
      <Compile Include="Assets\Scripts\ShopManager.cs" />
      <Compile Include="Assets\Scripts\ShopTrigger.cs" />
      <Compile Include="Assets\Scripts\WeakSpot.cs" />
+     <Compile Include="Assets\Scripts\WinBossManager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/home/lucas/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

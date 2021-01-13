@@ -8,6 +8,7 @@ public class CurrentSceneManager : MonoBehaviour
 
     public static CurrentSceneManager instance;
 
+    //Singleton
    private void Awake()
    {
        if(instance != null)

@@ -4,8 +4,11 @@ using UnityEngine.SceneManagement;
 public class GameOverManager : MonoBehaviour
 {
     public GameObject gameOverUI;
+    public AudioClip gameOverAudio;
     public static GameOverManager instance;
 
+
+    //Singleton
    private void Awake()
    {
        if(instance != null)
@@ -17,11 +20,15 @@ public class GameOverManager : MonoBehaviour
        instance = this; 
    }
 
+
+    //Procédure si le joueur mort
     public void OnPlayerDeath()
     {
         gameOverUI.SetActive(true);
+        AudioManager.instance.PlayClipAt(gameOverAudio, transform.position);
     }
 
+    //Procédure permettant de recommencer le niveau
     public void RetryButton()
     {
         //recommencre le niveau
@@ -31,16 +38,19 @@ public class GameOverManager : MonoBehaviour
         gameOverUI.SetActive(false);
     }
 
+    //procédure pour afficher le menu princiapl
     public void MainMenuButton()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenuSecours");
     }
 
+    //procédure pour quitter le jeux
     public void QuitButton()
     {
         //fermer le jeux
         Application.Quit();
     }
+
 
 
 }

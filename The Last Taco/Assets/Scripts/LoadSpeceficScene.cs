@@ -7,6 +7,7 @@ public class LoadSpeceficScene : MonoBehaviour
     public string sceneName;
     private Animator fadeSystem;
 
+    //Singleton
     private void Awake() 
     {
         fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
@@ -19,6 +20,7 @@ public class LoadSpeceficScene : MonoBehaviour
         }
     }
 
+    //Coroutine permttant de charger la scène suivante
     public IEnumerator loadNextScene()
     {
         LoadAndSaveData.instance.SaveData();

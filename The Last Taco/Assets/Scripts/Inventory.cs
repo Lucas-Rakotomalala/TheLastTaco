@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 
+//Classe permettant de gérer l'affichage de l'inventaire du joueur et ses fonctionnalités
 public class Inventory : MonoBehaviour
 {
    public int tacoCount;
@@ -17,6 +18,8 @@ public class Inventory : MonoBehaviour
 
    public static Inventory instance;
 
+
+    //Singleton
    private void Awake()
    {
        if(instance != null)
@@ -29,12 +32,14 @@ public class Inventory : MonoBehaviour
 
    }
 
+    //Procédure initialisation
    private void Start()
    {
        UpdateInventoryUI();
    }
 
 
+   //Procédure permettant l'utilisation d'un item et sa suppression de l'inventaire
    public void ConsumeItem()
    {
        if (content.Count == 0)
@@ -50,6 +55,7 @@ public class Inventory : MonoBehaviour
        UpdateInventoryUI();
    }
 
+   //Procédure permettant l'affichage de l'item suivant dans l'inventaire
    public void GetNextItem()
    {
        if (content.Count == 0)
@@ -65,6 +71,7 @@ public class Inventory : MonoBehaviour
        UpdateInventoryUI();
    }
 
+   //Procédure permettant l'affichage de l'item précédent dans l'inventaire
    public void GetPreviousItem()
    {
        if (content.Count == 0)
@@ -80,6 +87,7 @@ public class Inventory : MonoBehaviour
        UpdateInventoryUI();
    }
 
+   //Procédure permettant l'affichage des items de l'inventaire
    public void UpdateInventoryUI()
    {
        if (content.Count > 0)
@@ -94,17 +102,20 @@ public class Inventory : MonoBehaviour
        }
    }
 
+   //Procédure permettant la mise à jour du compteur de tacos
    public void AddTacos(int count)
    {
        tacoCount += count;
        UpdateTextUI();
    }
 
+    //Procédure permettant la mise jour du nom de l'item
    public void UpdateTextUI()
    {
        tacosCountText.text = tacoCount.ToString();
    }
 
+   //Procédure permettant la diminution du nombre de tacos lorsque le joueur en utilise pour acheter un item par exemple
    public void RemoveTacos(int count)
    {
         tacoCount -= count;

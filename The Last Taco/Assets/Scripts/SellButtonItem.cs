@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+//Classe permettant d'acheter un item à un marchand
 public class SellButtonItem : MonoBehaviour
 {
    public Text itemName;
@@ -9,6 +10,7 @@ public class SellButtonItem : MonoBehaviour
 
    public Item item;
 
+   //Procédure permettant d'ajouter l'item acheté à l'inventaire du joueur
    public void BuyItem()
    {
       Inventory inventory = Inventory.instance;

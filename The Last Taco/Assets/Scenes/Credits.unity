@@ -303,6 +303,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &580957191
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2642780658973409254, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409257, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: playlist.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409257, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: playlist.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 835f7b16fcaf330448eef46d91f62347, type: 3}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 485.19434
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 319.45245
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.9585063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642780658973409259, guid: 8e1b64316bf9d9aec993670a51903513,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e1b64316bf9d9aec993670a51903513, type: 3}
 --- !u!1 &1011194308
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,10 +521,18 @@ MonoBehaviour:
     GRAPHICS -</SIZE>\n\n<SIZE=60>ABSTRACT PLATEFORMER\n<I>BY  KENNEY</I></SIZE>\n\n<SIZE=60>NINJA
     ADVENTURE\n<I>BY  GAME ART 2D</I></SIZE>\n\n<SIZE=60>TACOS TENDER CHICKEN\n<I>BY 
     RAPIDO</I></SIZE>\n\n<SIZE=60>MONSTRE DE LA PIZZA\n<I>BY  BEHOLD DESIGN SUPPLY</I></SIZE>\n\n<SIZE=60>TEEWORLDS
-    FLAG\n<I>BY  TEEWORLDS</I></SIZE>\n\n\n\n\n\n<SIZE=120>- AUDIO -</SIZE>\n\n<SIZE=60>HERO 
+    FLAG\n<I>BY  TEEWORLDS</I></SIZE>\n\n<SIZE=60>AVOCADO ZOMBIE\n<I>BY Bpn_Inside</I></SIZE>\n\n<SIZE=60>BURGER
+    ZOMBIE\n<I>BY Doddy77</I></SIZE>\n\n<SIZE=60>DEVIL PASTA\n<I>BY kongvector</I></SIZE>\n\n<SIZE=60>HOT
+    DOG ZOMBIE\n<I>BY Steve Hilbert</I></SIZE>\n\n<SIZE=60>NACHO ZOMBIE\n<I>BY FLUMPYFINGERS</I></SIZE>\n\n<SIZE=60>MARCHAND\n<I>BY
+    SABELSKAYA</I></SIZE>\n\n<SIZE=60>LUIGI LOGO\n<I>BY THOMASDAFOESTUDIOS</I></SIZE>\n\n<SIZE=60>LUIGI
+    SPRITE\n<I>BY NO BODY</I></SIZE>\n\n<SIZE=60>HOMER LOGO\n<I>BY UNKNOWN</I></SIZE>\n\n<SIZE=60>HOMER
+    SPRITE\n<I>BY YAWACKHARY</I></SIZE>\n\n<SIZE=60>LUFFY LOGO\n<I>BY PNGEGG</I></SIZE>\n\n<SIZE=60>LUFFY
+    SPRITE\n<I>BY NEMU</I></SIZE>\n\n<SIZE=60>SPEDDY LOGO\n<I>BY PINCLIPART</I></SIZE>\n\n<SIZE=60>SPEEDY
+    SPRITE\n<I>BY YAMACKHARY</I></SIZE>\n\n\n\n\n\n\n<SIZE=120>- AUDIO -</SIZE>\n\n<SIZE=60>HERO 
     IMMORTAL\n<I>BY  TREVOR  LENTZ</I></SIZE>\n\n<SIZE=60>BOB'S  ADVENTURES  -  BACK34\n<I>BY 
     TOM  PETER</I></SIZE>\n\n<SIZE=60>8-BIT  SOUND  EFFECTS  LIBRARY\n<I>BY  LITTLE 
-    ROBOT  SOUND  FACTORY</I></SIZE>\n\n\n\n\n\n<SIZE=120>- SPECIAL  THANKS -</SIZE>\n\n<SIZE=60>TUTEUR
+    ROBOT  SOUND  FACTORY</I></SIZE>\n\n<SIZE=60>IT'S RAINING TACOS\n<I>BY  PARRY
+    GRIPP</I></SIZE>\n\n\n\n\n\n<SIZE=120>- SPECIAL  THANKS -</SIZE>\n\n<SIZE=60>TUTEUR
     / ENSEIGNANT\n\n<I>ALEXANDRE MEYER</I></SIZE>\n\n<SIZE=60>YOUTUBE\n\n<I>TUTO
     UNITY FR</I></SIZE>\n\n\n<SIZE=60><I>CE  JEUX EST R\xC9LIS\xC9 DANS LE CADRE
     D'UN PROJET INFORMATIQUE DE L'ENSEIGNEMENT LIFPROJET A L'UNIVERSIT\xC9 CLAUDE
@@ -562,7 +649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.9999, y: 2829}
+  m_AnchoredPosition: {x: 4.9999, y: -2129}
   m_SizeDelta: {x: 1782.8342, y: 792.86926}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102239811

@@ -8,6 +8,7 @@ public class WeakSpot : MonoBehaviour
 
     private bool isAttacking2;
 
+    //Procédure qui détecte une collision entre le joueur et l'ennemi, inflige des dégats ou ennemis éliminés 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && isAttacking2)
@@ -19,11 +20,13 @@ public class WeakSpot : MonoBehaviour
         isAttacking2 = false;
     }
 
+    //Prcédure de mise à jour
      void Update() 
     {
         InputButton();
     }
 
+    //Procédure détection bouton pressé
     void InputButton()
     {
         if(Input.GetKeyDown(KeyCode.LeftShift))
@@ -32,6 +35,7 @@ public class WeakSpot : MonoBehaviour
         }
     }
 
+    //Procédure remise à zéro
      private void ResetValues()
     {
         isAttacking2 = false;

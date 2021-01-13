@@ -121,12 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &20397577 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7760446717035060099, guid: 8bcd1cc0e5bc00ac9abfc475930462c5,
-    type: 3}
-  m_PrefabInstance: {fileID: 2743282984272903477}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &154494112 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 112366099, guid: 8bcd1cc0e5bc00ac9abfc475930462c5,
@@ -151,6 +145,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc9f3c5baeaabea5a92afe91ab0ae52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &288487007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 205997609546031538, guid: 8bcd1cc0e5bc00ac9abfc475930462c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2743282984272903477}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &298222019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: 8323368646458900513, guid: d771e8fdaf62cae018059887b1434113,
         type: 3}
       propertyPath: m_Name
-      value: Pizza Enemy (1)
+      value: Pizza Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8323368646458900513, guid: d771e8fdaf62cae018059887b1434113,
         type: 3}
@@ -4414,6 +4414,11 @@ PrefabInstance:
       propertyPath: fadeSystem
       value: 
       objectReference: {fileID: 457391339}
+    - target: {fileID: 1867672425364776281, guid: 37b2a73e6cb5954cebd48ac145ec4d39,
+        type: 3}
+      propertyPath: sceneName
+      value: Boss01
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b2a73e6cb5954cebd48ac145ec4d39, type: 3}
 --- !u!1001 &1904583007174714492
@@ -4650,6 +4655,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069963685278283772, guid: 42c2e0d3cb6532cdaa0b2ec49566ee57,
+        type: 3}
+      propertyPath: pngName
+      value: Vendor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42c2e0d3cb6532cdaa0b2ec49566ee57, type: 3}
@@ -4999,11 +5009,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 2743282983350929428, guid: 8bcd1cc0e5bc00ac9abfc475930462c5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2743282983611931105, guid: 8bcd1cc0e5bc00ac9abfc475930462c5,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5336,7 +5341,7 @@ PrefabInstance:
         type: 3}
       propertyPath: settingsWindow
       value: 
-      objectReference: {fileID: 20397577}
+      objectReference: {fileID: 288487007}
     - target: {fileID: 6149289179336628524, guid: 3bdfefed904b564649f794f376b0765b,
         type: 3}
       propertyPath: pngNameText
@@ -5455,17 +5460,17 @@ PrefabInstance:
     - target: {fileID: 8323368646458900513, guid: d771e8fdaf62cae018059887b1434113,
         type: 3}
       propertyPath: m_Name
-      value: Pizza Enemy
+      value: Pasta Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8323368646458900514, guid: d771e8fdaf62cae018059887b1434113,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.09
+      value: 15.5
       objectReference: {fileID: 0}
     - target: {fileID: 8323368646458900514, guid: d771e8fdaf62cae018059887b1434113,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.23
+      value: 13.7
       objectReference: {fileID: 0}
     - target: {fileID: 8323368646458900514, guid: d771e8fdaf62cae018059887b1434113,
         type: 3}
@@ -5512,5 +5517,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8323368647093347192, guid: d771e8fdaf62cae018059887b1434113,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323368647093347192, guid: d771e8fdaf62cae018059887b1434113,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.26634973
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323368647093347192, guid: d771e8fdaf62cae018059887b1434113,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323368647093347192, guid: d771e8fdaf62cae018059887b1434113,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.32842112
+      objectReference: {fileID: 0}
+    - target: {fileID: 8323368647093347199, guid: d771e8fdaf62cae018059887b1434113,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 633dcbd773211b5f7b435d4aa720ed58,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d771e8fdaf62cae018059887b1434113, type: 3}

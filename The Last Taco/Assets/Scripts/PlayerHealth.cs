@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Classe permettant de définir la vie du joueur mais aussi les différents évenmments qui peuvent lui en faire perdre ou gagner
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
@@ -17,6 +18,8 @@ public class PlayerHealth : MonoBehaviour
 
     public static PlayerHealth instance;
 
+
+    //Singleton
    private void Awake()
    {
        if(instance != null)
@@ -28,12 +31,14 @@ public class PlayerHealth : MonoBehaviour
        instance = this; 
    }
 
+    //Procédure Initisialisation
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
 
+    //Procédure permettant la perte de vie instantannée lorsque la touche h est pressée (pour des tests)
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.H))
@@ -42,6 +47,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    //Procédure permettant de récupérer la vie du joueur
     public void HealPlayer(int amout)
     {
         if ((currentHealth + amout) > maxHealth)
@@ -56,6 +62,7 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
+    //Procédure permettant d'infliger des dégats au joueur et de gérer sa mort
      public void TakeDamage(int damage)
     {
         if(!isInvincible)
@@ -78,6 +85,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    //Procédure permettant au héros de mourir
     public void Die()
     {
         Debug.Log("Le joueur est éliminé");
@@ -89,6 +97,7 @@ public class PlayerHealth : MonoBehaviour
         GameOverManager.instance.OnPlayerDeath();
     }
 
+    //Procédure permettant au joueur de réaparaitre
     public void Respawn()
     {
         PlayerMouvement.instance.enabled = true;
@@ -99,6 +108,7 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
+    //Procédure permettant au joueur d'être invincible pendant quelques secondes et de clignoter pour indiquer que l'invinciblité est active
     public IEnumerator InvincibilistyFlash()
     {
         while(isInvincible)
@@ -110,6 +120,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    //Procédure permettant d'être invincible seulement quelques temps après avoir pris un dégat
     public IEnumerator HandleInvicibilityDelay()
     {
         yield return new WaitForSeconds(invicibilityTimeAfterHit);
