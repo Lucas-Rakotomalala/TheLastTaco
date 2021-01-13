@@ -19,25 +19,20 @@ Incarnez un ninja et parcourez 4 pays pour découvrir la gastronomie :
 
 Installation
 -------------
-Selectionner le fichier à ttélécharger selon votre système d'exploitation.
+Selectionner le fichier à télécharger selon votre système d'exploitation. Une fois fait, cliquer sur l'application pour le lancer.
 
 #### :penguin: </i> Linux
 
-- 32 bits:
-//à ajouter
 - 64 bits: [link](https://forge.univ-lyon1.fr/p1803588/lifprojet-2020-201-am3/-/raw/master/The%20Last%20Taco/Builds/LastTaco.x86_64?inline=false)
 
 #### :computer: </i> Windows
 
-- 32 bits:
-//à ajouter
-- 64 bits:
+- 32 bits: [link](https://forge.univ-lyon1.fr/p1803588/lifprojet-2020-201-am3/-/blob/master/The%20Last%20Taco/Builds/LastTacosWindows32bits/The%20Last%20Taco.exe)
+- 64 bits: [link](https://forge.univ-lyon1.fr/p1803588/lifprojet-2020-201-am3/-/blob/master/The%20Last%20Taco/Builds/LastTacosWindows64bits/The%20Last%20Taco.exe)
 
 #### :apple: </i> MacOs
 
-- 32 bits:
-//à ajouter
-- 64 bits:
+- 32 et 64 bits: [link](https://forge.univ-lyon1.fr/p1803588/lifprojet-2020-201-am3/-/tree/master/The%20Last%20Taco/Builds/LastTacosMacOs.app) (Pas tester)
 
 ----------
 
