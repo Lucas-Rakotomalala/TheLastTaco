@@ -27,8 +27,11 @@ Installation
 #### :computer: </i> Windows
 
 - Télécharger le dossier complet en <kbd> .zip </kbd>
+
 -Décompresser (négliger les messages d'erreur si ils apparaissent)
+
 -Dans <kbd> The Last Taco/Builds </kdb> choisisser le dossier correspeondnat à votre système Windows
+
 - Ouvrir <kdb> The Last Taco.exe </kdb>
 
 #### :apple: </i> MacOs
